@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpendSage Home</title>
+    <!-- favicon here -->
+    <!-- <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    /> -->
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./slider.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="">
+    <header class="">
+      <nav class="desktop">
+        <div class="header">
+          <a href="#" class=""
+            ><img src="./assets/logo-desktop.svg" alt="logo"
+          /></a>
+          <div class="desktop-links">
+            <a href="#" class="">Home</a>
+            <a href="#" class="dropdown-desktop">
+              Services
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="#" class="dropdown-desktop">
+              Products
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="#">Blog</a>
+          </div>
+          <div class="desktop-btn">
+            <a href="#"><button>Join Us</button></a>
+          </div>
+        </div>
+      </nav>
+      <nav class="mobile">
+        <a href="#" class="logo"
+          ><img src="./assets/logo-mobile.svg" alt="logo"
+        /></a>
+        <i class="fa-solid fa-bars fa-2x menu" onclick="show()"></i>
+      </nav>
+    </header>
+    <main class="bdr">
+      <div class="mobile-dropdown mobile">
+        <div class="nothing" onclick="noShow()"></div>
+        <div class="dropdown-div left">
+          <div class="drop-down-content">
+            <div class="mobile-links">
+              <div class="">
+                <a href="#" class="">Home</a>
+              </div>
+              <div class="services">
+                <a href="#" class="dropdown-mobile">
+                  Services
+                  <i class="fa-solid fa-angle-down direction"></i>
+                </a>
+                <div class="under-services hide">
+                  <div class="admissions">
+                    <a href="#" class="dropdown-mobile">
+                      Admissions
+                      <i class="fa-solid fa-angle-down direction"></i>
+                    </a>
+                    <span class="under-admissions hide">
+                      <a href="#">FreeLearn</a>
+                      <a href="#">SageLearn</a>
+                    </span>
+                  </div>
+                  <a href="#" class="dropdown-mobile">Consultancy</a>
+                </div>
+              </div>
+              <div class="products">
+                <a href="#" class="dropdown-mobile">
+                  Products
+                  <i class="fa-solid fa-angle-down direction"></i>
+                </a>
+                <span class="under-products hide">
+                  <a href="#">E-Journal</a>
+                  <a href="#">SaveSage</a>
+                </span>
+              </div>
+              <div class="">
+                <a href="#">Blog</a>
+              </div>
+            </div>
+            <div class="mobile-btn">
+              <a href="#"><button>Join Us</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="hero desktop">
+          <div class="intro">
+            <h1 class="">GROW and ATTAIN<br />Stability in YOUR<br> FINANCES</h1>
+          </div>
+          <div class="slider">
+            <div class="slides">
+              <input type="radio" name="radio-btn" id="radio1" />
+              <input type="radio" name="radio-btn" id="radio2" />
+              <input type="radio" name="radio-btn" id="radio3" />
+              <!-- slide images start -->
+              <div class="slide first">
+                <div class="darken"></div>
+                <img src="./assets/desktop/bg1.png" />
+              </div>
+              <div class="slide">
+                <div class="darken"></div>
+                <img src="./assets/desktop/bg2.png" />
+              </div>
+              <div class="slide">
+                <div class="darken"></div>
+                <img src="./assets/desktop/bg3.png" />
+              </div>
+              <!-- slide images end -->
+
+              <!-- automatic navigation -->
+              <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+              </div>
+              <!-- automatic naviagation end -->
+            </div>
+            <!-- manual navigation starts -->
+            <div class="nav-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+            </div>
+          </div>
+        </div>
+        <div class="m-hero mobile">
+          <div class="intro bdr">
+            <h1 class="">GROW and ATTAIN<br />Stability in YOUR<br> FINANCES</h1>
+          </div>
+          <div class="m-slider">
+            <div class="m-slides">
+              <input type="radio" name="m-radio-btn" id="m-radio1" />
+              <input type="radio" name="m-radio-btn" id="m-radio2" />
+              <input type="radio" name="m-radio-btn" id="m-radio3" />
+              <!-- slide images start -->
+              <div class="m-slide mfirst">
+                <div class="darken"></div>
+                <img src="./assets/mobile/bg1.png" />
+              </div>
+              <div class="m-slide">
+                <div class="darken"></div>
+                <img src="./assets/mobile/bg2.png" />
+              </div>
+              <div class="m-slide">
+                <div class="darken"></div>
+                <img src="./assets/mobile/bg3.png" />
+              </div>
+              <!-- slide images end -->
+
+              <!-- automatic navigation -->
+              <div class="m-nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+              </div>
+              <!-- automatic naviagation end -->
+            </div>
+            <!-- manual navigation removed -->
+            <!-- <div class="m-nav-manual">
+                  <label for="m-radio1" class="manual-btn"></label>
+                  <label for="m-radio2" class="manual-btn"></label>
+                  <label for="m-radio3" class="manual-btn"></label>
+              </div> -->
+          </div>
+        </div>
+        <div class="sections bdr">
+          <section class="">
+            <h2>heheheh</h2>
+            <h2>heheheh</h2>
+            <h2>heheheh</h2>
+            <h2>heheheh</h2>
+            <h2>heheheh</h2>
+          </section>
+          <section class="">
+            <h2>heheheh</h2>
+            <h2>heheheh</h2>
+            <h2>heheheh</h2>
+            <h2>heheheh</h2>
+            <h2>heheheh</h2>
+          </section>
+          <section class="">
+            <h2>heheheh</h2>
+            <h2>heheheh</h2>
+            <h2>heheheh</h2>
+            <h2>heheheh</h2>
+            <h2>heheheh</h2>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script src="./header.js"></script>
+    <script src="./slider.js"></script>
+  </body>
+</html>
