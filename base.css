@@ -1,0 +1,247 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.bdr {
+  border: 1px solid red;
+}
+a {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+button {
+  font-family: "Poppins";
+  outline: 0;
+  border: 0;
+}
+body {
+  height: 100vh;
+}
+
+/* header section */
+header {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 10px rgba(29, 29, 29, 0.07);
+  width: 100vw;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .header:nth-child(2) {
+  margin-left: 100px;
+}
+nav .desktop-links {
+  display: flex;
+  margin-top: 25px;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 10px; */
+}
+nav .a-links a {
+  padding: 5px;
+}
+.a-links a:not(.desktop-btn a, .dropdown-desktop):hover {
+  border-bottom-style: solid;
+  width: fit-content;
+  border-bottom-color: #4b8521;
+}
+.mobile-btn button,
+.desktop-btn button {
+  background: linear-gradient(
+    146.48deg,
+    rgba(75, 133, 33, 0.79) 0%,
+    rgba(121, 234, 39, 0.94) 101.26%
+  );
+  color: #ffffff;
+  height: 45px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+.desktop-btn {
+  width: 150px;
+}
+.mobile-links a,
+.fa-xmark {
+  color: #eeeeee;
+}
+.mobile-links a:hover,
+.desktop-links .a-links a:hover {
+  color: #4b8521;
+}
+
+/* mobile dropdown */
+.dropdown-div {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background: #06051c;
+  transition: 1s;
+  grid-area: something;
+  z-index: 10;
+}
+
+/* the clickable div beside the slidein navbar */
+.nothing {
+  grid-area: nothing;
+}
+/* the clickable div beside the slidein navbar end*/
+
+.mobile-dropdown {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: grid;
+  overflow-x: hidden;
+  grid-template-columns: 1fr 0.3fr;
+  transition: 1s;
+  grid-template-areas: "something nothing";
+  z-index: 5;
+}
+.visible {
+  visibility: hidden;
+}
+.drop-down-content {
+  margin-top: 8px;
+}
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+}
+.not {
+  margin-top: 24px;
+}
+.not div {
+  margin-top: 16px;
+}
+.under-services,
+.under-products {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  padding-left: 20px;
+  transition: 1s;
+}
+.services div {
+  margin-top: 0px;
+}
+.under-admissions {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  padding-left: 20px;
+  transition: 1s;
+}
+.dropdown-mobile {
+  display: flex;
+  align-items: center;
+}
+.dropdown-mobile .fa-solid {
+  margin-left: 8px;
+}
+.mobile-btn {
+  margin-top: 48px;
+}
+.mobile-btn button {
+  width: 100%;
+}
+.desktop,
+.hide {
+  display: none;
+}
+
+/* classes added in javascript */
+.left {
+  transform: translateX(-200%);
+}
+.show {
+  transform: translateX(0);
+}
+.color {
+  background: hsla(0, 0%, 12%, 0.8);
+}
+.fl {
+  display: flex;
+}
+.hidden {
+  overflow-y: hidden;
+}
+/* classes added in javascript end */
+nav {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.bars {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+.circle {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.mobicon {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+/* header end */
+
+/* desktop and Tab */
+@media screen and (min-width: 728px) {
+  nav {
+    flex-direction: row;
+  }
+  .mobile {
+    display: none;
+  }
+  nav .a-links a:not(:first-child) {
+    margin-left: 24px;
+  }
+  .desktop {
+    display: block;
+  }
+  /* header section */
+  header {
+    margin-top: 0;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .main{
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width: 998px) {
+  nav .a-links a:not(:first-child) {
+    margin-left: 50px;
+  }
+}

@@ -1,6 +1,9 @@
+//for menu
 const menu = document.querySelector(".menu");
 const filter = document.querySelector(".mobile-dropdown ");
 const slideIn = document.querySelector(".mobile-dropdown .dropdown-div");
+let isClicked = false;
+// remember to set the overflow-y of the body to hidden to avoid scrolling
 const mSArrow = document.querySelector('.services .direction');
 const admissionsArrow = document.querySelector(".services .admissions .direction");
 const mPArrow = document.querySelector('.products .direction');
@@ -18,21 +21,14 @@ document.addEventListener('DOMContentLoaded', function(){
         document.querySelector('.admissions .under-admissions').classList.toggle('fl');
     }
 });
-
-//for menu
-let isClicked = false;
-// remember to set the overflow-y of the body to hidden to avoid scrolling
 function show(){
     filter.classList.toggle('color');
+    filter.classList.toggle('visible');
     document.querySelector("body").classList.toggle("hidden");
     if(!isClicked){
-        menu.classList.remove('fa-bars');
-        menu.classList.add('fa-xmark');
         slideIn.classList.remove('left');
         isClicked = true;
     }else{
-        menu.classList.remove('fa-xmark');
-        menu.classList.add('fa-bars');
         slideIn.classList.add('left');
         isClicked = false;
     }
@@ -40,12 +36,14 @@ function show(){
 // This function works only if the mobile nav is in display
 function noShow(){
     if (isClicked) {
-        filter.classList.remove("color");
-        menu.classList.add("fa-bars");
-        menu.classList.remove("fa-xmark");
+        document.querySelector("body").classList.toggle("hidden");
+        filter.classList.toggle('color');
+        filter.classList.toggle("visible");
         slideIn.classList.add("left");
         isClicked = false;
       }
   }
 
 //for dropdown items
+
+// header js end
