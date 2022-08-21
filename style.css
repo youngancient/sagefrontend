@@ -2,7 +2,7 @@
 .fess {
   margin-left: 0;
 }
-.main{
+.main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,7 +66,7 @@ input[type="radio"] {
   font-size: 34px;
   line-height: 46px;
   text-align: center;
-  color:#fff;
+  color: #fff;
 }
 .manual-btn {
   border-radius: 10px;
@@ -126,10 +126,12 @@ input[type="radio"] {
   align-items: center;
   text-align: center;
 }
-.slide img, .m-slide img{
+.slide img,
+.m-slide img {
   opacity: 0.5;
 }
-.slide, .m-slide{
+.slide,
+.m-slide {
   /* background: hsla(0, 0%, 0%, 0.6); */
   background: hsla(0, 0%, 0%);
 }
@@ -140,72 +142,81 @@ input[type="radio"] {
   margin-top: 0;
   position: relative;
 }
-section{
+section {
   width: 100%;
-  position: absolute;
+  position: relative;
 }
 section h2 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 21px;
   line-height: 30px;
-  color: #01205F;
+  color: #01205f;
 }
-.first-section{
+.first-section {
   position: relative;
 }
-.first-section .bent-arrow, .first-section .text{
+.first-section .bent-arrow,
+.first-section .text {
   position: absolute;
   top: 0;
   left: 40px;
   z-index: 5;
 }
-section .grow{
-  position:absolute;
+section .grow {
+  position: absolute;
   top: 0;
 }
-section .grow{
+section .grow {
   width: 100%;
 }
-.grow img{
+.grow img {
   width: 100%;
 }
-.desktop-arrow, .tab-arrow{
+.desktop-arrow,
+.tab-arrow {
   display: none;
 }
 @keyframes grow {
-  0%{
+  0% {
     width: 10%;
   }
-  50%{
+  50% {
     width: 50%;
   }
-  100%{
+  100% {
     width: 100%;
   }
 }
-.bent-arrow svg{
+.bent-arrow svg {
   animation: grow;
   animation-duration: 2s;
   animation-iteration-count: 5;
 }
-.second{
-  position: absolute;
+.first-sec{
+  position: relative;
+}
+.second {
+  position: relative;
   margin-top: 70%;
   display: flex;
   justify-content: center;
   /* padding: 24px; */
 }
-.grid h4{
+.grid h4 {
   font-size: 28px;
   font-weight: 700;
   margin-top: 16px;
 }
-.grid h4, .grid p, .pands h4, .pands p, .pands h3{
-  font-family: 'Nunito';
+.grid h4,
+.grid p,
+.pands h4,
+.pands p,
+.pands h3 {
+  font-family: "Nunito";
 }
-.grid p{
+.grid p {
   font-size: 18px;
   font-weight: 500;
   text-align: center;
@@ -213,21 +224,24 @@ section .grow{
   margin-top: 24px;
   padding: 8px;
 }
-.grid .line{
+.grid .line {
   padding: 5px;
 }
-.grid-one, .grid-two, .grid-three{
+.grid-one,
+.grid-two,
+.grid-three {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.grid-two, .grid-three{
+.grid-two,
+.grid-three {
   margin-top: 32px;
 }
-.pands{
-  position: absolute;
-  margin-top: 320%;
+.pands {
+  position: relative;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,76 +249,119 @@ section .grow{
 .pands-1 {
   position: relative;
 }
-.pands-1 .arrow{
+.pands-1 .arrow {
   position: absolute;
 }
-.pands .cont{
+.pands .cont {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.pands h4{
+.pands h4,
+.aboutus h4 {
   font-size: 28px;
   font-weight: 700;
   text-align: center;
-  color: #01205F;
+  color: #01205f;
   line-height: 25px;
 }
-.pands-1 p{
+.pands-1 p {
   margin-top: 16px;
 }
-.pands-1 .spaced{
+.pands-1 .spaced {
   margin-top: 40px;
   /* margin-bottom: 24px; */
 }
-.pands p{
+.pands p {
   text-align: center;
   font-size: 18px;
   font-weight: 600;
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
-.pands-2{
+.pands-2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.pands-2 div img{
+.pands-2 div img {
   width: 100%;
 }
-.cont div a{
+.cont div a {
   width: 200px;
+  /* margin-top: 24px */
 }
-.cont div a button{
+.cont .btn{
+  margin-top: 24px;
+}
+.abutton{
   width: 120px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 43px;
   padding: 10px;
-  background: #01205F;
+  background: #01205f;
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
 }
-.cont div a button svg{
+.cont div a button svg {
   width: 8px;
 }
-.pands-1 .arrow{
+.pands-1 .arrow {
   left: 10px;
   top: 30px;
 }
-.aboutus{
-  margin-top: 560%;
+.aboutus {
+  padding-top: 72px;
   position: relative;
+}
+.aboutus h4 {
+  color: #000;
+  font-family: "Nunito";
+}
+.aboutus .text p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 16px;
+  opacity: 0.9;
+}
+.aboutus .masked{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16px;
+}
+.aboutus .masked .relativ{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 92%;
+}
+.relativ img{
+  width: 100%;
+}
+.aboutus section .btn{
+  margin-top: 24px;
+}
+.aboutus section div button{
+  margin: 0 auto;
+}
+.aboutus section div a {
+  width: 200px;
 }
 /* desktop and Tab */
 @media screen and (min-width: 728px) {
   .mobile {
     display: none;
   }
-  .tab-arrow{
+  .tab-arrow {
     display: block;
   }
   .desktop {
@@ -386,7 +443,7 @@ section .grow{
   #radio1:checked ~ .nav-auto .auto-btn1 {
     background: #1236f0;
   }
-  .blue{
+  .blue {
     background: #1236f0;
   }
   #radio2:checked ~ .nav-auto .auto-btn2 {
@@ -401,7 +458,7 @@ section .grow{
   .nav-manual {
     top: 48%;
   }
-  .nav-manual div{
+  .nav-manual div {
     background: transparent;
   }
   .intro {
@@ -420,99 +477,155 @@ section .grow{
     font-size: 50px;
     line-height: 75px;
   }
-  .first-section{
-    margin-top: 100px;
+  .first-section {
+    /* margin-top: 100px; */
   }
-  .first-section .bent-arrow, .first-section .text{
+  .first-section .bent-arrow,
+  .first-section .text {
     top: -20px;
     left: 56px;
   }
-  .first-section .bent-arrow{
+  .first-section .bent-arrow {
     top: -32px;
   }
-  .second{
-    margin-top: 80%;
+  .second {
+    /* margin-top: 80%; */
     display: flex;
     justify-content: center;
     padding: 24px;
   }
-  .second .grid{
+  .second .grid {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 20px;
     padding: 8px;
   }
-  .grid p{
+  .grid p {
     text-align: left;
     line-height: 25px;
     padding: 4px;
   }
-  .grid h4{
+  .grid h4 {
     margin-top: 16px;
   }
-  .grid-one, .grid-two, .grid-three{
+  .grid-one,
+  .grid-two,
+  .grid-three {
     display: block;
     margin-top: 0;
   }
-  .pands{
+  .pands {
     padding: 24px;
-    margin-top: 130%;
+    /* margin-top: 130%; */
   }
-  .pands-1{
+  .pands-1 {
     margin-top: 40px;
   }
-  .pands .cont{
+  .pands .cont {
     display: grid;
     grid-template-columns: 0.9fr 1fr;
     grid-column-gap: 24px;
   }
-  .pands-2{
+  .pands-2 {
     display: flex;
     justify-content: center;
     flex-direction: row;
   }
-  .pands-1 h4{
+  .pands-1 h4 {
     text-align: left;
   }
-  .pands-2 .go-down{
+  .pands-2 .go-down {
     margin-top: 50%;
   }
-  .pands p{
+  .pands p {
     text-align: left;
   }
-  .pands-1 .spaced{
+  .pands-1 .spaced {
     padding-right: 24px;
   }
-  .cont div a{
+  .cont div a {
     width: 120px;
-    margin-top: 40px;
   }
-  .cont div a button{
+  .cont div a button {
     width: 100%;
   }
-  .pands-1 .arrow{
+  .pands-1 .arrow {
     left: 80%;
     top: 20%;
   }
-  .aboutus{
-    margin-top: 180%;
+  .aboutus {
+    padding-top: 0;
   }
-  .aboutus section{
+  .aboutus h4 {
+    text-align: left;
+  }
+  .aboutus .text {
+    grid-area: text;
+  }
+  .aboutus .masked {
+    grid-area: masked;
+    padding-top: 0;
+    padding: 16px;
+  }
+  .aboutus .masked .relativ{
+    display: block;
+    width: 100%;
+  }
+  .aboutus section {
     margin-top: 24px;
+    display: grid;
+    grid-column-gap: 24px;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-areas: "masked text";
+
+    padding: 16px;
+  }
+  .aboutus .text{
+    padding-top: 80px;
+  }
+  .aboutus .text p {
+    padding-right: 40px;
+    margin-top: 24px;
+    text-align: left;
+  }
+  .masked div{
+    height: 450px;
+  }
+  .masked .masked-img {
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    position: absolute;
+  }
+  .masked .relativ{
+    position: relative;
+  }
+  .under-masked{
+    position: absolute;
+    top: 80px;
+    width: 100px;
+    height: 40px;
+    left: 250px;
+    /* z-index: 1; */
+    transform: translateY(32%);
+    opacity: 0.9;
+  }
+  .under-masked img{
+    width:100%;
+    height: 200px;
+  }
+  .aboutus section div button{
+    margin: 0 0;
   }
 }
 
 @media screen and (min-width: 998px) {
-  .tab-arrow{
+  .tab-arrow {
     display: none;
   }
-  .desktop-arrow{
+  .desktop-arrow {
     display: block;
-  }
-  .darken {
-    height: 128%;
-    z-index: 1;
   }
   .slides {
     transform: translateY(0%);
@@ -520,7 +633,7 @@ section .grow{
   .nav-manual {
     margin-top: 20%;
   }
-  .nav-auto{
+  .nav-auto {
     top: 91%;
   }
   .intro {
@@ -533,41 +646,55 @@ section .grow{
   .sections {
     margin-top: 20%;
   }
-  .first-section{
+  .first-section {
     margin-top: 0;
   }
-  .section .grow{
+  .section .grow {
     top: 0;
   }
-  .first-section .text{
+  .first-section .text {
     top: 40px;
     left: 150px;
   }
-  .first-section .bent-arrow{
+  .first-section .bent-arrow {
     top: 10px;
     left: 150px;
   }
-  .second{
-    margin-top: 70%;
+  .second {
+    margin-top: 84%;
   }
-  .second .grid{
+  .second .grid {
     grid-column-gap: 48px;
   }
-  .pands{
-    margin-top: 104%;
+  .pands {
+    /* margin-top: 104%; */
   }
-  .pands .cont{
+  .pands .cont {
     grid-column-gap: 48px;
   }
-  .pands-1{
+  .pands-1 {
     padding-left: 24px;
     margin-top: 0;
   }
-  .pands-1 .arrow{
+  .pands-1 .arrow {
     left: 95%;
     top: 20%;
   }
-  .aboutus{
-    margin-top: 160%;
+  .aboutus section {
+    grid-template-columns: 1fr 1fr;
+    padding: 16px;
+  }
+  .under-masked{
+    position: absolute;
+    top: 80px;
+    width: 100px;
+    left: 440px;
+    /* z-index: 1; */
+    opacity: 0.9;
+    transform: translateY(40%);
+  }
+  .under-masked img{
+    width:100%;
+    height: 200px;
   }
 }
