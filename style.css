@@ -17,6 +17,9 @@
   position: relative;
   font-family: "Fraunces", sans-serif;
 }
+.tab{
+  display: none;
+}
 .m-hero {
   width: 100vw;
   height: auto;
@@ -375,7 +378,11 @@ section .grow {
 }
 .vision-img img{
   width:100%;
+  height: 100%;
   opacity: 0.5;
+}
+.desktop-image{
+  display: none;
 }
 .vision .vision-grid{
   position: absolute;
@@ -585,7 +592,7 @@ footer{
   .mobile {
     display: none;
   }
-  .tab-arrow {
+  .tab-arrow, .tab {
     display: block;
   }
   .desktop {
@@ -842,6 +849,13 @@ footer{
   }
   .vision-img{
     border-radius: 0;
+    height: 42vh;
+  }
+  .vision-img img{
+    width: 100%;
+  }
+  .desktop-image{
+    display: none;
   }
   .vision-grid{
     display: grid;
@@ -969,6 +983,9 @@ footer{
 }
 
 @media screen and (min-width: 998px) {
+  .tab{
+    display: none;
+  }
   .first-sec{
     margin-top: 0px;
   }
@@ -1053,6 +1070,9 @@ footer{
     width:100%;
     height: 200px;
   }
+  .vision-img{
+    height: auto;
+  }
   .vision-grid{
     margin-top: 40px;
   }
@@ -1075,6 +1095,9 @@ footer{
   }
   .vision{
     padding: 24px;
+  }
+  .desktop-image{
+    display: block;
   }
   .joinus-svg{
     transform: translateY(0%);
