@@ -581,6 +581,10 @@ footer{
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.footer-sh a:hover{
+  text-decoration: underline;
+  text-decoration-color: #396D13;
+}
 .footer .similr{
   margin-top: 24px;
 }
