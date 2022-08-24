@@ -212,6 +212,47 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+.desktop-dropdown{
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 8px;
+  border: 2px solid #4b8521;
+}
+.desktop-dropdown h4{
+  font-weight: 500;
+  font-size: 15px;
+}
+.desktop-dropdown h4:hover{
+  color: #4b8521;
+}
+
+.dunder-services, .dunder-products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  margin: 0 auto;
+  width: 100%;
+}
+.hide {
+  display: none;
+}
+.fl{
+  display: flex;
+}
+.rotate{
+  transform: rotate(180deg);
+}
 /* header end */
 
 /* desktop and Tab */
@@ -234,14 +275,40 @@ nav {
     padding: 0px;
     padding-left: 20px;
     padding-right: 20px;
+    width: 100vw;
   }
   .main{
     margin-top: 8px;
   }
+  .desktop-services{
+    transform: translate(200%, -10%);
+  }
+  .desktop-products{
+    transform: translate(380%, -10%);
+  }
+  .hide {
+    display: none;
+  }
+  .display{
+    display: flex;
+  }
+  .desktop-links .fa-angle-down{
+    font-size: 15px;
+  }
 }
-
+@media screen and (min-width: 720px) and (max-width: 819){
+  nav .a-links a{
+    font-size: 14px;
+  }
+}
 @media screen and (min-width: 998px) {
   nav .a-links a:not(:first-child) {
     margin-left: 50px;
+  }
+  .desktop-services{
+    transform: translate(300%, -8%);
+  }
+  .desktop-products{
+    transform: translate(510%, -8%);
   }
 }

@@ -222,6 +222,27 @@ section .grow {
   margin-top: 24px;
   padding: 8px;
 }
+.grid .some-text{
+  overflow-x: hidden;
+}
+
+/* javascript class */
+.go-up{
+  transform: translateY(200%);
+}
+.go-right{
+  transform: translateX(200%);
+  transition: transform 0.3s ease-in;
+}
+.go-left{
+  transform: translateX(-200%);
+  transition: transform 0.5s ease-in;
+}
+.showit {
+  transform: translateX(0);
+}
+
+/* javascript classes end */
 .grid .line {
   padding: 5px;
 }
@@ -319,6 +340,10 @@ section .grow {
   padding-top: 72px;
   position: relative;
 }
+.aboutus section{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 .aboutus h4 {
   color: #000;
   font-family: "Nunito";
@@ -388,6 +413,9 @@ section .grow {
   position: absolute;
   top: 0px;
 }
+.hidden{
+  overflow-x: hidden;
+}
 .transparent .btn{
   display: flex;
   justify-content: flex-end;
@@ -432,6 +460,7 @@ section .grow {
 }
 .blog{
   margin-top: 32px;
+  overflow-x: hidden;
 }
 .blog .h-four,.blog .h-p{
   color: #01205F;
@@ -465,6 +494,7 @@ section .grow {
   display: flex;
   flex-direction: column;
   background: linear-gradient(293deg, #01205F 88.56%, #190DAA 226.77%);
+  overflow-x: hidden;
 }
 .joinus-svg{
   width: 90%;
@@ -601,6 +631,9 @@ footer{
   /* hero slider section */
   .hero h1 {
     font-size: 50px;
+  }
+  .desktop-nav{
+    z-index: 5;
   }
   .slider {
     width: 100vw;
@@ -980,6 +1013,9 @@ footer{
   .footer-sh p{
     margin-top: 16px;
   }
+}
+@media screen and (min-width: 720px) and (max-width: 819){
+  
 }
 
 @media screen and (min-width: 998px) {

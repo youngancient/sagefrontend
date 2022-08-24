@@ -9,18 +9,30 @@ const admissionsArrow = document.querySelector(".services .admissions .direction
 const mPArrow = document.querySelector('.products .direction');
 document.addEventListener('DOMContentLoaded', function(){
     document.querySelector('.mobile-links .services a').onclick = function(){
-        mSArrow.classList.toggle('fa-angle-up');
-        document.querySelector('.services .under-services').classList.toggle('fl');
+        mSArrow.classList.toggle('rotate');
+        document.querySelector('.mobile-links .services .under-services').classList.toggle('fl');
     }
     document.querySelector('.mobile-links .products a').onclick = function(){
-        mPArrow.classList.toggle('fa-angle-up');
+        mPArrow.classList.toggle('rotate');
         document.querySelector('.mobile-links .under-products').classList.toggle('fl');
     }
     document.querySelector('.under-services .admissions a').onclick = function(){
-        admissionsArrow.classList.toggle('fa-angle-up');
+        admissionsArrow.classList.toggle('rotate');
         document.querySelector('.admissions .under-admissions').classList.toggle('fl');
     }
 });
+const service = document.querySelector(".desktop-services");
+const sArrow = document.querySelector(".desktop-links .services .fa-angle-down");
+const pArrow = document.querySelector(".desktop-links .products .fa-angle-down");
+const product = document.querySelector(".desktop-products");
+function showUnderServices(){
+    service.classList.toggle('display');
+    sArrow.classList.toggle('rotate');
+}
+function showUnderProducts(){
+    product.classList.toggle('display');
+    pArrow.classList.toggle('rotate');
+}
 function show(){
     filter.classList.toggle('color');
     filter.classList.toggle('visible');

@@ -28,8 +28,8 @@
     />
   </head>
   <body class="">
-    <header class="bdr">
-      <nav class="desktop">
+    <header class="">
+      <nav class="desktop desktop-nav">
         <div class="header">
           <a href="#" class=""
             ><img src="./assets/logo-desktop.svg" alt="logo"
@@ -37,15 +37,15 @@
           <div class="desktop-links">
             <div class="a-links">
               <a href="#" class="">Home</a>
-              <a href="#" class="dropdown-desktop">
+              <a href="#" class="dropdown-desktop services" onclick="showUnderServices()">
                 Services
                 <i class="fa-solid fa-angle-down"></i>
               </a>
-              <a href="#" class="dropdown-desktop">
+              <a href="#" class="dropdown-desktop products" onclick="showUnderProducts()">
                 Products
                 <i class="fa-solid fa-angle-down"></i>
               </a>
-              <a href="#">Blog</a>
+              <a href="#" class="">Blog</a>
             </div>
             <div class="desktop-btn">
               <a href="#"><button>Join Us</button></a>
@@ -60,7 +60,21 @@
           /></a>
         </div>
         <div class="bars">
-          <i class="fa-solid fa-bars fa-2x menu" onclick="show()"></i>
+          <!-- <i class="fa-solid fa-bars fa-2x menu" onclick="show()"></i> -->
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            onclick="show()"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="menu"
+          >
+            <path
+              d="M20 30H5V26.6667H20V30ZM35 21.6667H5V18.3333H35V21.6667ZM35 13.3333H20V10H35V13.3333Z"
+              fill="#01205F"
+            />
+          </svg>
         </div>
       </nav>
     </header>
@@ -124,6 +138,24 @@
                 <a href="#"><button>Join Us</button></a>
               </div>
               </div>
+          </div>
+        </div>
+      </div>
+      <div class="desktop-services desktop desktop-dropdown hide">
+        <div class="dunder-services">
+          <div class="container">
+            <a href="#" class=""><h4>FreeLearn</h4></a>
+            <a href="#" class=""><h4>SageLearn</h4></a>
+            <a href="#" class=""><h4>Consultancy</h4></a>
+          </div>
+        </div>
+      </div>
+      <div class="desktop-products desktop desktop-dropdown hide">
+        <div class="dunder-products">
+          <div class="container">
+            <a href="#" class=""><h4>E-Journal</h4></a>
+            <a href="#" class=""><h4>E-finance</h4></a>
+            <a href="#" class=""><h4>More</h4></a>
           </div>
         </div>
       </div>
