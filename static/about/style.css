@@ -1,0 +1,492 @@
+/* mobile view */
+.main .head {
+  margin-top: 32px;
+}
+.big-head {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  color: #01205f;
+}
+/* pad sections here */
+.main,
+.section-one {
+  padding: 24px;
+}
+main .section-one {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+section {
+  width: 100%;
+}
+.image-one,
+.image-two {
+  background: hsla(0, 0%, 0%, 0.9);
+  border-radius: 16px;
+  margin: 0 auto;
+  position: relative;
+}
+.hidden {
+  overflow-x: hidden;
+}
+.image-two {
+  margin-top: 16pt;
+}
+.section-one .image {
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.image-one img,
+.image-two img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.imagebutton {
+  position: absolute;
+  top: 80%;
+  left: 8%;
+  background: transparent;
+  cursor: pointer;
+}
+.h-p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 46px;
+  color: #ffffff;
+}
+footer .h-p{
+    color: #396D13;
+    opacity: 0.9;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: left;
+}
+.imagebutton .h-p:hover {
+  text-decoration: underline;
+}
+.section-one .appear {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 16px;
+}
+.small-p p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.button {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.button button {
+  width: 50px;
+  height: 40px;
+  background: #fbfbfb;
+  opacity: 0.8;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button button svg {
+  padding-left: 4px;
+}
+.button button:hover {
+  border: 2px solid #01205f;
+}
+/* js classes */
+.go-right {
+  transform: translateX(200%);
+  transition: transform 0.3s ease-in;
+}
+.go-left {
+  transform: translateX(-200%);
+  transition: transform 0.5s ease-in;
+}
+.go-up {
+  transform: translateY(-200%);
+  transition: transform 0.3s ease-in;
+}
+.showit {
+  transform: translateX(0);
+}
+.hideit {
+  display: none;
+}
+
+.problem-words .small-p p {
+  color: #1f1f1f;
+  opacity: 0.9;
+}
+main .problems,
+main .ourvision,
+main .mission,
+main .values{
+  padding: 8px;
+  margin-top: 48px;
+}
+.div-problems,
+.div-ourvision,
+.div-mission,
+.div-values{
+  background: hsla(0, 0%, 98%, 0.5);
+  padding: 16px;
+}
+.div-problems h4,
+.div-problems p {
+  text-align: center;
+}
+.problem-words {
+  transition: 0.3s ease-in;
+}
+.puzzle-img {
+  width: 100%;
+  background: hsla(0, 0%, 0%, 0.9);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.puzzle-img img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.problems .small-p p {
+  margin-top: 24px;
+}
+
+.ourvision .small-p {
+  margin-top: 24px;
+  width: 370px;
+}
+.ourvision .small-p p {
+  color: #01205f;
+  opacity: 0.9;
+  text-align: center;
+}
+.ourvision .div-ourvision {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ourvision .percentages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 24px;
+}
+.percentages .percent {
+  position: relative;
+  width: 270px;
+}
+.percentages .percent img {
+  width: 100%;
+}
+.percent .desc {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  opacity: 0.9;
+}
+.percent .p {
+  color: #4b8521;
+}
+.mission .div-mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.div-mission .fact {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #d9d9d9;
+  margin-top: 24px;
+  overflow-y: hidden;
+}
+.fact .p, .value .p {
+  color: #01205f;
+  font-weight: 600;
+}
+.fact .first {
+  margin-top: 16px;
+}
+.fact p {
+  padding: 2px;
+  margin-top: 4px;
+}
+main .values{
+    position: relative;
+}
+.values .other-stuffs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8px;
+}
+.values .value{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px
+}
+.value p{
+    margin-top: 16px;
+}
+/* tab view */
+@media screen and (min-width: 728px) {
+  .main .head {
+    text-align: center;
+    margin-top: 32px;
+  }
+  .p {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  main {
+    padding: 32px;
+  }
+  main .section-one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 24px;
+  }
+  .image-two {
+    margin-top: 0pt;
+  }
+  /* header fix */
+  .desktop-services {
+    transform: translate(175%, -30%);
+  }
+  .desktop-products {
+    transform: translate(340%, -30%);
+  }
+  .image-one,
+  .image-two {
+    border-radius: 32px;
+  }
+  .section-one .h-p {
+    font-size: 34px;
+  }
+  .section-one .appear {
+    padding: 16px;
+  }
+
+  .small-p p {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+  }
+  .appear .small-p p {
+    line-height: 22px;
+  }
+  .button button {
+    width: 89px;
+    height: 57px;
+  }
+  .div-problems {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    grid-column-gap: 16px;
+  }
+  .div-problems h4,
+  .div-problems p {
+    text-align: left;
+  }
+  main .problems,
+  main .ourvision,
+  main .mission,
+  main .values {
+    margin-top: 64px;
+    padding: 24px;
+    padding-top: 64px;
+  }
+  .problems .small-p p {
+    margin-top: 24px;
+  }
+  .puzzle-img {
+    border-radius: 0;
+    border-bottom-left-radius: 28px;
+    border-top-left-radius: 28px;
+    width: 100%;
+  }
+  .problems .problem-words {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px;
+  }
+  main .ourvision {
+    padding-top: 64px;
+    margin-top: 64px;
+  }
+  .ourvision .div-ourvision,
+  .mission .div-mission{
+    padding: 16px;
+  }
+  .ourvision .small-p p {
+    line-height: 24px;
+  }
+  .ourvision .percentages {
+    flex-direction: row;
+    margin-top: 40px;
+  }
+  .percentages .percent {
+    margin-left: 32px;
+  }
+  .div-mission .table-grid {
+    margin-top: 32px;
+  }
+  .div-mission .fact {
+    display: grid;
+    grid-column-gap: 40px;
+    grid-template-columns: 0.5fr 1fr;
+    margin-top: 32px;
+  }
+  .fact p {
+    padding: 2px;
+    margin-top: 16px;
+  }
+  .fact .first {
+    text-align: left;
+  }
+  .fact .second {
+    text-align: left;
+    max-width: 465px;
+    margin-left: 40px;
+  }
+  .mission .div-mission {
+    padding-bottom: 24px;
+  }
+  .percentages .percent {
+    width: auto;
+  }
+  .div-values{
+    padding: 0;
+    }
+  .values .container {
+    width: 100%;
+    position: relative;
+    background: hsla(0, 0%, 98%,0.5);
+    
+  }
+  .values .half-circle {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    padding: 4px;
+    transform: translateX(-50%);
+    border-top: 100px solid #fff;
+    border-left: 150px solid hsla(0, 0%, 98%,0.1);;
+    border-right: 150px solid hsla(0, 0%, 98%,0.1);;
+  }
+  .values h4{
+    position: absolute;
+    top: -5px;
+  }
+  .values .value{
+    padding: 16px;
+  }
+  .values .other-stuffs{
+    /* margin-top: 80px; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 24px;
+  }
+}
+
+/* border-top color: #D9D9D9 */
+/* desktop view */
+@media screen and (min-width: 998px) {
+  /* header fix */
+  .desktop-services {
+    transform: translate(260%, -40%);
+  }
+  .desktop-products {
+    transform: translate(475%, -40%);
+  }
+  /* end */
+  main {
+    padding: 40px;
+  }
+  .small-p p {
+    line-height: 46px;
+  }
+  .appear .small-p {
+    margin-top: 32px;
+  }
+  .appear .small-p p {
+    line-height: 46px;
+  }
+  .section-one .appear {
+    padding: 32px;
+    top: 8%;
+  }
+  .button {
+    margin-top: 48px;
+  }
+  .image-one,
+  .image-two {
+    height: 663px;
+    width: 561px;
+  }
+  .puzzle-img {
+    height: 609px;
+    width: 516px;
+  }
+  .percentages .percent {
+    position: relative;
+    width: 270px;
+  }
+  .div-problems {
+    grid-column-gap: 0px;
+  }
+}

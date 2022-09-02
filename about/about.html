@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <!-- favicon here -->
+    <!-- <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    /> -->
+    <link rel="stylesheet" href="../static/base.css" />
+    <link rel="stylesheet" href="../static/about/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="">
+    <header class="">
+      <nav class="desktop desktop-nav">
+        <div class="header">
+          <a href="#" class=""
+            ><img src="../static/assets/logo-desktop.svg" alt="logo"
+          /></a>
+          <div class="desktop-links">
+            <div class="a-links">
+              <a href="#" class="">Home</a>
+              <a
+                href="#"
+                class="dropdown-desktop services"
+                onclick="showUnderServices()"
+              >
+                Services
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <a
+                href="#"
+                class="dropdown-desktop products"
+                onclick="showUnderProducts()"
+              >
+                Products
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <a href="#" class="">Blog</a>
+            </div>
+            <div class="desktop-btn">
+              <a href="#"><button class="ripple">Join Us</button></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="mobile">
+        <div class="m-logo">
+          <a href="#" class="logo"
+            ><img src="../static/assets/logo-mobile.svg" alt="logo"
+          /></a>
+        </div>
+        <div class="bars">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            onclick="show()"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="menu"
+          >
+            <path
+              d="M20 30H5V26.6667H20V30ZM35 21.6667H5V18.3333H35V21.6667ZM35 13.3333H20V10H35V13.3333Z"
+              fill="#01205F"
+            />
+          </svg>
+        </div>
+      </nav>
+    </header>
+    <main class="">
+      <div class="mobile-dropdown mobile visible">
+        <div class="nothing" onclick="noShow()"></div>
+        <div class="dropdown-div left">
+          <div class="drop-down-content">
+            <div class="mobile-links">
+              <div class="mobicon">
+                <svg
+                  width="70"
+                  height="70"
+                  viewBox="0 0 70 70"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="35" cy="35" r="34.5" stroke="#fff" />
+                  <path
+                    d="M35.2666 33.1166C35.1 33.1 34.9 33.1 34.7166 33.1166C30.75 32.9833 27.6 29.7333 27.6 25.7333C27.6 21.65 30.9 18.3333 35 18.3333C39.0833 18.3333 42.4 21.65 42.4 25.7333C42.3833 29.7333 39.2333 32.9833 35.2666 33.1166Z"
+                    stroke="#fff"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M26.9333 39.2667C22.9 41.9667 22.9 46.3667 26.9333 49.05C31.5167 52.1167 39.0333 52.1167 43.6167 49.05C47.65 46.35 47.65 41.95 43.6167 39.2667C39.05 36.2167 31.5333 36.2167 26.9333 39.2667Z"
+                    stroke="#fff"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <div class="circle" onclick="noShow()">
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+              </div>
+              <div class="not">
+                <div class="home">
+                  <a href="#" class="">Home</a>
+                </div>
+                <div class="">
+                  <a href="#">About</a>
+                </div>
+                <div class="services">
+                  <a href="#" class="dropdown-mobile">
+                    Services
+                    <i class="fa-solid fa-angle-down direction"></i>
+                  </a>
+                  <div class="under-services hide">
+                    <div class="admissions">
+                      <a href="#" class="dropdown-mobile">
+                        Admissions
+                        <i class="fa-solid fa-angle-down direction"></i>
+                      </a>
+                      <span class="under-admissions hide">
+                        <a href="#">FreeLearn</a>
+                        <a href="#">SageLearn</a>
+                      </span>
+                    </div>
+                    <a href="#" class="dropdown-mobile">Consultancy</a>
+                  </div>
+                </div>
+                <div class="products">
+                  <a href="#" class="dropdown-mobile">
+                    Products
+                    <i class="fa-solid fa-angle-down direction"></i>
+                  </a>
+                  <span class="under-products hide">
+                    <a href="#">E-Journal</a>
+                    <a href="#">SaveSage</a>
+                  </span>
+                </div>
+                <div class="">
+                  <a href="#">Blog</a>
+                </div>
+              </div>
+              <div class="mobile-btn">
+                <a href="#"><button class="ripple">Join Us</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="desktop-services desktop desktop-dropdown hide">
+        <div class="dunder-services">
+          <div class="container">
+            <a href="#" class=""><h4>FreeLearn</h4></a>
+            <a href="#" class=""><h4>SageLearn</h4></a>
+            <a href="#" class=""><h4>Consultancy</h4></a>
+          </div>
+        </div>
+      </div>
+      <div class="desktop-products desktop desktop-dropdown hide">
+        <div class="dunder-products">
+          <div class="container">
+            <a href="#" class=""><h4>E-Journal</h4></a>
+            <a href="#" class=""><h4>E-finance</h4></a>
+            <a href="#" class=""><h4>More</h4></a>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="head">
+          <h1 class="big-head">ABOUT US</h1>
+        </div>
+      </div>
+      <section class="section-one">
+        <div class="image-one hidden">
+          <div class="image">
+            <img
+              src="../static/assets/desktop/who_we_are.svg"
+              alt="who we are"
+              class=""
+            />
+          </div>
+          <button class="imagebutton" onclick="showOne()">
+            <p class="h-p">Who are we?</p>
+          </button>
+          <div class="appear go-left">
+            <h4 class="h-p">Who we are?</h4>
+            <div class="small-p">
+              <p class="">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
+                dictum egestas viverra hac et vitae. Nisi est viverra est,
+                vestibulum, non amet. Convallis blandit viverra libero, pretium mi
+                velit, pretium. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Turpis dictum egestas viverra hac et vitae. Nisi est viverra
+                est, vestibulum, non amet. Convallis blandit viverra libero,
+                pretium mi velit, pretium.
+              </p>
+            </div>
+            <div class="button">
+              <button onclick="removeOne()">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.54167 20.5001L0 12.5L9.54167 4.5157L11 6.00008L2.94271 12.5L11 19.0157L9.54167 20.5001Z" fill="#01205F"/>
+                  </svg>                  
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="image-two hidden">
+          <div class="image">
+            <img
+              src="../static/assets/desktop/what_we_do.svg"
+              alt="what we do"
+              class=""
+            />
+          </div>
+          <button class="imagebutton" onclick="showTwo()">
+            <p class="h-p">What we do!</p>
+          </button>
+          <div class="appear go-left">
+            <h4 class="h-p">What we do!</h4>
+            <div class="small-p">
+              <p class="">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
+                dictum egestas viverra hac et vitae. Nisi est viverra est,
+                vestibulum, non amet. Convallis blandit viverra libero, pretium mi
+                velit, pretium. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Turpis dictum egestas viverra hac et vitae. Nisi est viverra
+                est, vestibulum, non amet. Convallis blandit viverra libero,
+                pretium mi velit, pretium.
+              </p>
+            </div>
+            <div class="button">
+              <button onclick="removeTwo()">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.54167 20.5001L0 12.5L9.54167 4.5157L11 6.00008L2.94271 12.5L11 19.0157L9.54167 20.5001Z" fill="#01205F"/>
+                  </svg>                  
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="problems">
+        <div class="div-problems hidden">
+          <h4 class="big-head mobile">Problem We Solve</h4>
+          <div class="puzzle-img">
+            <img src="../static/assets/desktop/figure_it_out.svg" alt="" class="desktop">
+            <img src="../static/assets/mobile/puzzle-img.svg" alt="" class="mobile">
+          </div>
+          <div class="problem-words go-right">
+            <h4 class="big-head desktop">Problem We Solve</h4>
+            <div class="small-p">
+              <p class="">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
+                dictum egestas viverra hac et vitae. Nisi est viverra est,
+                vestibulum, non amet. Convallis blandit viverra libero, pretium mi
+                velit, pretium. 
+              </p>
+              <p class="">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Turpis dictum egestas viverra hac et vitae. Nisi est viverra
+                est, vestibulum, non amet. Convallis blandit viverra libero,
+                pretium mi velit, pretium.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ourvision">
+        <div class="div-ourvision">
+          <h4 class="big-head">OUR VISION</h4>
+          <div class="small-p">
+              <p class="">
+                Our vision is to help people come into stability in their finances and grow steadily 
+              </p>
+          </div>
+            <div class="percentages">
+              <div class="percent" style="margin-left: 0;">
+                <img src="../static/assets/30percent.svg" alt="thirty percent" class="">
+                <div class="desc">
+                  <p class="p">30%</p>
+                  <p class="p">Growth</p>
+                </div>
+              </div>
+              <div class="percent">
+                <img src="../static/assets/60percent.svg" alt="sixty percent" class="">
+                <div class="desc">
+                  <p class="p">60%</p>
+                  <p class="p">Stability</p>
+                </div>
+              </div>
+              <div class="percent">
+                <img src="../static/assets/90percent.svg" alt="ninety percent" class="">
+                <div class="desc">
+                  <p class="p">90%</p>
+                  <p class="p">Consistency</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section class="mission">
+        <div class="div-mission">
+          <h4 class="big-head">MISSION STATEMENT</h4>
+          <div class="table-grid">
+            <div class="fact f-one">
+              <p class="p first go-up">Financial Education</p>
+              <p class="second p go-up">
+                This helps Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div class="fact f-two">
+              <p class="p first go-up">System and strategy</p>
+              <p class="second p go-up">
+                This helps Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div class="fact f-three">
+              <p class="p first go-up">Consistency</p>
+              <p class="second p go-up">
+                This helps Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div class="fact" style="border-top: 0;">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="values">
+        <div class="div-values">
+          <div class="container">
+            <div class="half-circle desktop">
+            </div>
+            <h4 class="big-head">CORE VALUES</h4>
+            <div class="other-stuffs hidden">
+              <div class="value one go-left">
+                <div class="image">
+                  <img src="../static/assets/Illustrations/Education.svg" alt="education" class="">
+                </div>
+                <p class="p">Education</p>
+              </div>
+              <div class="value two go-right">
+                <div class="image">
+                  <img src="../static/assets/Illustrations/Trust.svg" alt="trust" class="">
+                </div>
+                <p class="p">Trust</p>
+              </div>
+              <div class="value three go-left">
+                <div class="image">
+                  <img src="../static/assets/Illustrations/Integrity.svg" alt="integrity" class="">
+                </div>
+                <p class="p">Integrity</p>
+              </div>
+              <div class="value four go-right">
+                <div class="image">
+                  <img src="../static/assets/Illustrations/Services.svg" alt="service" class="">
+                </div>
+                <p class="p">Services</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="">
+      <div class="footer">
+        <div class="footer-logo">
+          <a href="#" class="desktop"
+            ><img src="../static/assets/logo-desktop.svg" alt="logo"
+          /></a>
+          <a href="#" class="mobile"
+            ><img src="../static/assets/logo-mobile.svg" alt="logo"
+          /></a>
+        </div>
+        <div class="two similr">
+          <h4 class="h-p ftrcolor">Products</h4>
+          <div class="footer-sh">
+            <a href="#" class=""><p class="h-p ftrcolor">Lorem Ipsum</p></a>
+            <a href="#" class=""><p class="h-p ftrcolor">Lorem Ipsum</p></a>
+          </div>
+        </div>
+        <div class="three similr">
+          <h4 class="h-p ftrcolor">Services</h4>
+          <div class="footer-sh">
+            <a href="#" class=""><p class="h-p ftrcolor">Lorem Ipsum</p></a>
+            <a href="#" class=""><p class="h-p ftrcolor">Lorem Ipsum</p></a>
+          </div>
+        </div>
+        <div class="four similr">
+          <h4 class="h-p ftrcolor">Company</h4>
+          <div class="footer-sh">
+            <a href="#" class=""><p class="h-p ftrcolor">Lorem Ipsum</p></a>
+            <a href="#" class=""><p class="h-p ftrcolor">Lorem Ipsum</p></a>
+            <a href="#" class=""><p class="h-p ftrcolor">Lorem Ipsum</p></a>
+          </div>
+        </div>
+        <div class="five similr">
+          <h4 class="h-p ftrcolor">Legal</h4>
+          <div class="footer-sh">
+            <a href="#" class=""><p class="h-p ftrcolor">Lorem Ipsum</p></a>
+            <a href="#" class=""><p class="h-p ftrcolor">Lorem Ipsum</p></a>
+            <a href="#" class=""><p class="h-p ftrcolor">Lorem Ipsum</p></a>
+          </div>
+        </div>
+        <div class="six similr">
+          <div class="footer-links">
+            <a href="#" class="">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+            <a href="#" class="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <div class="footer-sh">
+            <a href="#" class=""><p class="h-p ftrcolor">Address -- Lorem Ipsum</p></a>
+            <a href="#" class=""><p class="h-p ftrcolor">Phone no -Lorem Ipsum</p></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyrite">
+        <p class="h-p ftrcolor">&copy;Copyright2022SpendSage</p>
+      </div>
+    </footer>
+    <script src="../static/base_script.js"></script>
+    <script src="../static/about/about.js"></script>
+  </body>
+</html>

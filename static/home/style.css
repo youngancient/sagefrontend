@@ -564,63 +564,6 @@ section .grow {
 }
 /* section end */
 
-/* footer  */
-footer{
-  margin-top: 24px;
-  width: 100vw;
-  padding: 32px;
-  background: #F7F7F7;
-  border: 1px solid #EEEEEE;
-}
-.ftrcolor{
-  color: #396D13;
-  opacity: 0.9;
-}
-.footer{
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.footer-sh a:hover{
-  text-decoration: underline;
-  text-decoration-color: #396D13;
-}
-.footer .similr{
-  margin-top: 24px;
-}
-.footer-logo{
-  grid-column: 1/3;
-}
-.footer .similr h4{
-  font-weight: 700;
-}
-.copyrite{
-  margin-top: 48px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-.copyrite .h-p{
-  font-size: 14px;
-}
-.footer-sh p{
-  margin-top: 16px;
-}
-.footer .six .footer-links  a{
-  color: #396D13;
-}
-.footer .six{
-  margin-top: 40px;
-}
-.footer .six .footer-links a:hover{
-  font-size: 20px;
-}
-.footer .six .footer-links{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-/* footer end */
 /* desktop and Tab */
 @media screen and (min-width: 728px) {
   .mobile {
@@ -631,6 +574,13 @@ footer{
   }
   .desktop {
     display: block;
+  }
+  /* header fix */
+  .desktop-services{
+    transform: translate(200%, -10%);
+  }
+  .desktop-products{
+    transform: translate(380%, -10%);
   }
   /* hero slider section */
   .hero h1 {
@@ -985,38 +935,7 @@ footer{
   .joinus-text h4, .joinus-text p{
     text-align: left;
   }
-  /* footer */
-  footer{
-    margin-top: 80px;
-  }
-  .footer-logo{
-    grid-column: 1/1;
-    width: 100px;
-    height: 100px;
-  }
-  .footer-logo a img{
-    width: 100%;
-    height: 100%;
-  }
-  .footer{
-    grid-template-columns: repeat(6, 1fr);
-  }
-  .footer .similr{
-    margin-top: 16px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  .footer .six .footer-links{
-    justify-content: space-evenly;
-  }
-  .footer-sh{
-    margin: 0 auto;
-    margin-top: 8px;
-  }
-  .footer-sh p{
-    margin-top: 16px;
-  }
+  
 }
 @media screen and (min-width: 720px) and (max-width: 819){
   
@@ -1025,6 +944,13 @@ footer{
 @media screen and (min-width: 998px) {
   .tab{
     display: none;
+  }
+  /* header fix */
+  .desktop-services{
+    transform: translate(300%, -8%);
+  }
+  .desktop-products{
+    transform: translate(510%, -8%);
   }
   .first-sec{
     margin-top: 0px;
@@ -1141,13 +1067,5 @@ footer{
   }
   .joinus-svg{
     transform: translateY(0%);
-  }
-  /* footer */
-  footer{
-    margin-top: 200px;
-  }
-  .footer-logo{
-    width: 150px;
-    height: 150px;
   }
 }
