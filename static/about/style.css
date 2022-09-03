@@ -168,6 +168,7 @@ main .values{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 16px;
 }
 .puzzle-img img {
   width: 100%;
@@ -274,6 +275,16 @@ main .values{
     margin-top: 16px;
 }
 /* tab view */
+@media screen and (max-width: 374px) {
+  .appear .h-p{
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .appear .small-p p{
+    font-size: 17px;
+  line-height: 22px;
+  }
+}
 @media screen and (min-width: 728px) {
   .main .head {
     text-align: center;
