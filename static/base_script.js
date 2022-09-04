@@ -79,3 +79,7 @@ buttons.forEach(button => {
         setTimeout(()=> circle.remove(), 500);
     })
 })
+
+document.addEventListener('DOMContentLoaded', function(){
+
+})

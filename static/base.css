@@ -3,8 +3,37 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 .bdr {
   border: 1px solid red;
+}
+.floater{
+  position: fixed;
+  left: 80%;
+  right: 20%;
+  bottom: 0;
+  width: 200px;
+  transform: translate(-30%,-100%);
+  /* transform: translateX(-30%); */
+  z-index: 10;
+  display: none;
+}
+.floater small{
+  color: #fff;
+}
+.floater a{
+  background-color: #000;
+  padding: 8px;
+}
+.floater a svg{
+  height: 100%;
+}
+.floater p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 a {
   text-decoration: none;
@@ -357,6 +386,9 @@ footer{
 
 /* desktop and Tab */
 @media screen and (min-width: 728px) {
+  .floater{
+    transform: translate(0%,-100%);
+  }
   nav {
     flex-direction: row;
   }
