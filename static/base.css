@@ -223,12 +223,21 @@ footer .h-p{
 /* classes added in javascript end */
 nav {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row-reverse;
 }
 .bars {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: left;
+}
+.m-logo{
+  width: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.m-logo .logo{
+  margin-left: 30%;
 }
 .circle {
   width: 25px;
