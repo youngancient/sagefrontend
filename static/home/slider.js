@@ -121,23 +121,7 @@ function pandsAnimation(){
     }
 }
 
-// function floater(){
-//     const card = document.querySelector('main .start');
-//     const cardTop = card.getBoundingClientRect().top;
-//     const card2 = document.querySelector('footer');
-//     const cardTop2 = card2.getBoundingClientRect().top;
-//     if(cardTop < triggerPoint){
-//         document.querySelector('main .floater').style.display ='flex';
-//     } else{
-//         document.querySelector('main .floater').style.display ='none';
-//     }
-    
-//     if(cardTop2 < triggerPoint){
-//         document.querySelector('main .floater').style.display ='none';
-//     }else{
-//         document.querySelector('main .floater').style.display ='flex';
-//     }
-// }
+
 function floater(){
     const card = document.querySelector('main .start');
     const cardTop = card.getBoundingClientRect().top;
