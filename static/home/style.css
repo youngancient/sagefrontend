@@ -83,10 +83,10 @@ input[type="radio"] {
   margin-left: 0;
 }
 #m-radio2:checked ~ .mfirst {
-  margin-left: -20.25%;
+  margin-left: -20%;
 }
 #m-radio3:checked ~ .mfirst {
-  margin-left: -40.25%;
+  margin-left: -40%;
 }
 .m-nav-auto {
   position: absolute;
