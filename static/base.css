@@ -9,6 +9,30 @@ html {
 .bdr {
   border: 1px solid red;
 }
+#spinner   {  
+  animation: spin 2s linear infinite;
+  /* color: green; */
+}
+.spinner{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+@keyframes spin {
+  0% { 
+    transform: rotate(0deg); 
+    color: #01205f;
+    }
+  100% { 
+    transform: rotate(360deg); 
+    color: #4b8521;
+  }
+}
 .floater{
   position: fixed;
   left: 80%;
