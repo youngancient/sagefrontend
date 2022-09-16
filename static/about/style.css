@@ -91,7 +91,7 @@ footer .h-p{
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 46px;
   color: #ffffff;
 }
 .button {
@@ -277,14 +277,14 @@ main .values{
 }
 /* tab view */
 @media screen and (max-width: 374px) {
-  .appear .h-p{
+  /* .appear .h-p{
     font-size: 24px;
     line-height: 32px;
   }
   .appear .small-p p{
     font-size: 17px;
   line-height: 22px;
-  }
+  } */
 }
 @media screen and (min-width: 728px) {
   .main .head {
@@ -329,11 +329,14 @@ main .values{
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 46px;
     color: #ffffff;
   }
   .appear .small-p p {
-    line-height: 22px;
+    line-height: 44px;
+  }
+  .appear .small-p {
+    margin-top: 32px;
   }
   .button button {
     width: 89px;
@@ -365,6 +368,7 @@ main .values{
     border-bottom-left-radius: 28px;
     border-top-left-radius: 28px;
     width: 100%;
+    margin-top: 0px;
   }
   .problems .problem-words {
     display: flex;

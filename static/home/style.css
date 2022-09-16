@@ -26,7 +26,7 @@
 }
 .m-slider {
   width: 100vw;
-  height: 100vh;
+  height: 644px;
   overflow: hidden;
   position: relative;
 }
@@ -40,7 +40,7 @@
 }
 .m-slide img {
   width: 100%;
-  height: 95vh;
+  height: 100%;
 }
 .radio {
   position: absolute;
@@ -130,7 +130,6 @@ input[type="radio"] {
 }
 .slide,
 .m-slide {
-  /* background: hsla(0, 0%, 0%, 0.6); */
   background: hsla(0, 0%, 0%);
 }
 /* hero slider end */
@@ -425,6 +424,9 @@ section .grow {
   background: transparent;
   padding: 0;
 }
+.one{
+  padding: 16px;
+}
 .transparent{
   background: hsla(0, 100%, 100%,0.2);
   border-radius: 10px;
@@ -433,18 +435,22 @@ section .grow {
   justify-content: center;
   align-items: center;
   padding: 32px;
+  height: 586px;
 }
 .transparent p, .h-p{
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  line-height: 25px;
+  line-height: 36px;
   color: #FFFFFF;
   opacity: 0.9;
 }
 .transparent p{
   margin-top: 40px;
+}
+.transparent h4{
+  width: 100%;
 }
 .transparent .godown{
   margin-top: 80px;
@@ -574,6 +580,9 @@ section .grow {
   }
   .desktop {
     display: block;
+  }
+  .one{
+    padding: 0px;
   }
   /* header fix */
   .desktop-services{
@@ -836,7 +845,7 @@ section .grow {
   }
   .vision-img{
     border-radius: 0;
-    height: 42vh;
+    /* height: 42vh; */
   }
   .vision-img img{
     width: 100%;
@@ -854,15 +863,20 @@ section .grow {
   .transparent{
     display: block;
     padding: 8px;
+    height: 586px;
+  }
+  .transparent h4{
+    width: auto;
   }
   .transparent .btn{
     margin-top: 10px;
   }
-  .transparent .godown{
-    margin-top: 10px;
-  }
   .transparent p{
     margin-top: 24px;
+  }
+  .transparent p, .h-p{
+    font-size: 18px;
+    line-height: 32px;
   }
   .transparent .btn a{
     padding: 2px;
@@ -937,9 +951,6 @@ section .grow {
   }
   
 }
-@media screen and (min-width: 720px) and (max-width: 819){
-  
-}
 
 @media screen and (min-width: 998px) {
   .tab{
@@ -962,7 +973,7 @@ section .grow {
     display: block;
   }
   .slides {
-    transform: translateY(0%);
+    transform: translateY(-5%);
     margin-top: 0;
   }
   .nav-manual {
@@ -1005,9 +1016,6 @@ section .grow {
   .second .grid {
     grid-column-gap: 48px;
   }
-  .pands {
-    /* margin-top: 104%; */
-  }
   .pands .cont {
     grid-column-gap: 48px;
   }
@@ -1039,15 +1047,16 @@ section .grow {
   .vision-img{
     height: auto;
   }
-  .vision-grid{
-    margin-top: 40px;
-  }
   .transparent{
     display: block;
     padding: 60px;
   }
   .transparent p{
     margin-top: 40px;
+  }
+  .transparent p, .h-p{
+    font-size: 18px;
+    line-height: 46px;
   }
   .transparent .btn{
     margin-top: 80px;
