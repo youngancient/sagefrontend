@@ -424,8 +424,9 @@ section .grow {
   background: transparent;
   padding: 0;
 }
-.one{
+.one, .two{
   padding: 16px;
+  height: 586px;
 }
 .transparent{
   background: hsla(0, 100%, 100%,0.2);
@@ -434,8 +435,8 @@ section .grow {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 32px;
-  height: 586px;
+  padding: 16px;
+  height: 100%;
 }
 .transparent p, .h-p{
   font-family: 'Nunito';
@@ -581,7 +582,7 @@ section .grow {
   .desktop {
     display: block;
   }
-  .one{
+  .one, .two{
     padding: 0px;
   }
   /* header fix */
