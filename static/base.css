@@ -155,9 +155,6 @@ button .circle{
   color: #01205F;
   text-align: center;
 }
-footer .h-p{
-  text-align: left;
-}
 @keyframes scale {
   to{
     transform: translate(-50%,-50%) scale(3);
@@ -357,6 +354,14 @@ footer{
   padding: 32px;
   background: #F7F7F7;
   border: 1px solid #EEEEEE;
+  /* height: 20px; */
+}
+footer .h-p{
+  text-align: left;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+  font-weight: 600;
 }
 .ftrcolor{
   color: #396D13;
@@ -373,6 +378,7 @@ footer{
 }
 .footer .similr{
   margin-top: 24px;
+  max-height: 160px;
 }
 .footer-logo{
   grid-column: 1/3;

@@ -70,12 +70,9 @@ section {
   color: #ffffff;
 }
 /* footer fix */
-footer .h-p{
-    color: #396D13;
-    opacity: 0.9;
-    font-size: 16px;
-    line-height: 25px;
-    text-align: left;
+.ftrcolor{
+  color: #396D13;
+  opacity: 0.9;
 }
 .imagebutton .h-p:hover {
   text-decoration: underline;
